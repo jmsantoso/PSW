@@ -7,3 +7,24 @@ table{
     font-weight: 100;
     border: 5px solid;
 }
+
+body{color: lightblue;
+
+}
+
+h1{
+    color: rgb(19, 19, 152);
+    text-align: center;
+}
+
+p{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: large;
+}
+
+td, th{
+    border: 2px solid rgb(0, 0, 0);
+    text-align: center;
+    padding: 5px;
+}
+
