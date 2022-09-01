@@ -1,0 +1,9 @@
+table{
+    width: 100%;
+    background-color: rgb(88, 50, 204);
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(179, 245, 241);
+    font-weight: 100;
+    border: 5px solid;
+}
