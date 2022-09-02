@@ -364,20 +364,91 @@ thead th, tfoot th, tfoot td {
 
         <tr>
             <td>position</td>
-            <td>div</td>
-            <td>div</td>
+            <td>
+            La propiedad position de CSS especifica cómo un elemento es posicionado en el documento.
+                Tambien las propiedades top, right, bottom, y left determinan la ubicación final de los elementos posicionados.
+            </td>
+            <td>Damos los valores a una caja
+               .box {
+  width: 100px;
+  height: 100px;
+  background: red;
+  color: white;
+}
+
+.outer {
+  width: 500px;
+  height: 300px;
+  overflow: scroll;
+  padding-left: 150px;
+}
+}</td>
         </tr>
 
         <tr>
             <td>overflow</td>
-            <td>div</td>
-            <td>div</td>
+            <td>
+            La propiedad CSS overflow-y define qué se debe mostrar cuando el contenido se desborda de los extremos superior e inferior de un elemento en bloque.
+            </td>
+            <td>
+                overflow-y:hidden — Para esconder el texto fuera de la caja
+                #div1 { overflow-y: hidden; margin-bottom: 12px;}
+                
+                overflow-y:scroll — Para agregar una barra scroll si se necesita
+#div2 { overflow-y: scroll; margin-bottom: 12px;}
+                
+overflow-y:visible — Para mostrar el texto fuera de la caja si se necesita
+#div3 { overflow-y: visible; margin-bottom: 120px;}
+                
+overflow-y:auto — Este es particular, en la mayoría de los navegadores, equivale a scroll            
+#div4 { overflow-y: auto; margin-bottom: 120px;}</td>
         </tr>
 
         <tr>
             <td>float</td>
-            <td>div</td>
-            <td>div</td>
+            <td>
+            La propiedad CSS float ubica un elemento al lado izquierdo o derecho de su contenedor, permitiendo a los elementos de texto y en línea aparecer a su costado. El elemento es removido del normal flujo de la página, aunque aún sigue siendo parte del flujo (a diferencia del posicionamiento absoluto).
+             Un elemento flotante es un elemento en el que el valor calculado de float no es igual a none.  
+            </td>
+            <td>
+                Su sintaxis:
+                Sintáxis
+/* Valores clave || Keyword values */
+float: left;
+float: right;
+float: none;
+float: inline-start;
+float: inline-end;
+
+/* Valores globales || Global values */
+float: inherit;
+float: initial;
+float: unset;
+                
+                Ejemplo:
+                section {
+  border: 1px solid blue;
+  width: 100%;
+  float: left;
+}
+
+div {
+  margin: 5px;
+  width: 50px;
+  height: 150px;
+}
+
+.left {
+  float: left;
+  background: pink;
+}
+
+.right {
+  float: right;
+  background: cyan;
+}
+                
+            </td>
         </tr>
 
 
