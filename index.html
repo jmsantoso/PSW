@@ -204,26 +204,71 @@ margin: unset;
 
         <tr>
             <td>fonts</td>
-            <td>div</td>
-            <td>div</td>
+            <td>La propiedad font permite establecer de una sola vez los valores para todas las propiedades: font-style, font-variant, font-weight, font-size, line-height y font-family en una hoja de estilo.
+            </td>
+            <td>Sintaxis
+font: [ <font-style> || <font-variant> || <font-weight> ]? <font-size> [ / <line-height> ]? <font-family>
+                Ejemplos
+
+/* Ajusta el tamaño de letra a 12pt y el alto de línea a 14pt. La familia tipográfica es sans-serif */
+p { font: 12pt/14pt sans-serif }
+/* Ajusta el tamaño de letra al 80% del elemento padre o al tamaño por defecto (si no hay elemento padre) y la familia tipográfica a sans-serif */
+p { font: 80% sans-serif }
+/* Ajusta el peso tipográfico a '''bold''' (negrita), el estilo de letra a ''italic'' (cursiva), el tamaño de letra a large (grande) y la familia a serif. */
+p { font: bold italic large serif }</td>
         </tr>
 
         <tr>
             <td>height</td>
-            <td>div</td>
-            <td>div</td>
+            <td>La propiedad CSS height especifica la altura de un elemento. Por defecto, la propiedad define la altura del área de contenido. Sin embargo, si box-sizing está configurado como border-box, determina la altura del área de borde.
+            </td>
+            <td>Ejemplos:
+            div {
+  width: 250px;
+  margin-bottom: 5px;
+  border: 2px solid blue;
+}
+
+#taller {
+  height: 50px;
+}
+
+#shorter {
+  height: 25px;
+}
+
+#parent {
+  height: 100px;
+}
+
+#child {
+  height: 50%;
+  width: 75%;
+}</td>
         </tr>
 
         <tr>
             <td>width</td>
-            <td>div</td>
-            <td>div</td>
+            <td>Esta propiedad CSS  controla el ancho de la caja de los elementos</td>
+            <td>El siguiente ejemplo establece el valor de la anchura del elemento <div> lateral:
+
+#lateral { width: 200px; }
+
+<div id="lateral">
+  ...
+</div>
+                </td>
         </tr>
 
         <tr>
             <td>links</td>
-            <td>div</td>
-            <td>div</td>
+            <td>Representa un elemento que aún no se ha visitado. Coincide con cada elemento no visitado <a>, <area>, o <link> que tiene un atributo href
+                Para darle un estilo apropiado a los enlaces, coloque la regla :link antes de todas las demás reglas relacionadas con el enlace, tal como lo define el orden LVHA: :link — :visited — :hover — :active.
+                </td>
+            <td>Ejemplo, cambiar colores a dorado (enlace visitado) y verde (enlace no visitado): a:link {
+  background-color: gold;
+  color: green;
+}</td>
         </tr>
 
         <tr>
@@ -234,8 +279,87 @@ margin: unset;
 
         <tr>
             <td>tables</td>
-            <td>div</td>
-            <td>div</td>
+            <td>Permite dar un formato a las tablas, cambiar el espaciado y la distribución
+Lo primero que hay que hacer es solucionar los aspectos de espaciado/distribución; que por defecto en la tabla son muy justos,
+                la tipografía, 
+                Gráficos y colores
+                Darle un estilo al titulo que destaque
+            </td>
+            <td>
+            /* spacing */
+
+table {
+  table-layout: fixed;
+  width: 100%;
+  border-collapse: collapse;
+  border: 3px solid purple;
+}
+
+thead th:nth-child(1) {
+  width: 30%;
+}
+
+thead th:nth-child(2) {
+  width: 20%;
+}
+
+thead th:nth-child(3) {
+  width: 15%;
+}
+
+thead th:nth-child(4) {
+  width: 35%;
+}
+
+th, td {
+  padding: 20px;
+}
+                /* typography */
+
+html {
+  font-family: 'helvetica neue', helvetica, arial, sans-serif;
+}
+
+thead th, tfoot th {
+  font-family: 'Rock Salt', cursive;
+}
+
+th {
+  letter-spacing: 2px;
+}
+
+td {
+  letter-spacing: 1px;
+}
+
+tbody td {
+  text-align: center;
+}
+
+tfoot th {
+  text-align: right;
+}
+                thead, tfoot {
+  background: url(leopardskin.jpg);
+  color: white;
+  text-shadow: 1px 1px 1px black;
+}
+
+thead th, tfoot th, tfoot td {
+  background: linear-gradient(to bottom, rgba(0,0,0,0.1), rgba(0,0,0,0.5));
+  border: 3px solid purple;
+}
+                caption {
+  font-family: 'Rock Salt', cursive;
+  padding: 20px;
+  font-style: italic;
+  caption-side: bottom;
+  color: #666;
+  text-align: right;
+  letter-spacing: 1px;
+}
+                
+            </td>
         </tr>
 
         <tr>
