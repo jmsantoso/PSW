@@ -146,27 +146,25 @@
             <td>/* Usando <background-color> */
 background: green;
 
-/* Usando <bg-image> y <repeat-style> */
+Usando <bg-image> y <repeat-style>
 background: url("test.jpg") repeat-y;
-
-/* Usando <box> and <background-color> */
-background: border-box red;
-
-/* Una sola imagen, centrada y escalada */
+<br>
+Usando <box> and <background-color>
+background: border-box red;<br>
 background: no-repeat center/80% url("../img/image.png");
                 </td>
         </tr>
 
         <tr>
             <td>borders</td>
-            <td>Especificar el estilo de bordes de una etiqueta
-            La propiedad border permite definir en una única regla todos los bordes de los elementos seleccionados. Se puede utilizar border para definir el o los valores siguientes: border-width, border-style, border-color
+            <td>Especificar el estilo de bordes de una etiqueta<br>
+            La propiedad border permite definir en una única regla todos los bordes de los elementos seleccionados. Se puede utilizar border para definir el o los valores siguientes: border-width, border-style, border-color<br>
             Su Sintaxis es
 border: [border-width || border-style || border-color | inherit] 
             </td>
             <td>
-            Ejemplo
-element {
+            Ejemplo: <br>
+                element {
     border: 1px solid #000;
 }
             </td>
@@ -174,32 +172,47 @@ element {
 
         <tr>
             <td>margins</td>
-            <td>Especificar el estilo de  de una etiqueta
+            <td>Especificar el estilo de  de una etiqueta<br>
             La propiedad CSS margin establece el margen para los cuatro lados. Es una abreviación para evitar tener que establecer cada lado por separado con las otras propiedades de margen: margin-top (en-US), margin-right, margin-bottom y margin-left (en-US).
             </td>
-            <td>/* Aplica a todos los cuatro lados */
+            <td>
+                Aplica a todos los cuatro lados<br>
 margin: 1em;
-
-/* Vertical | Horizontal */
+<br><br>
+Vertical | Horizontal<br>
 margin: 5% auto;
-
-/* Arriba | Horizontal | Abajo */
+<br><br>
+Arriba | Horizontal | Abajo<br>
 margin: 1em auto 2em;
-
-/* Arriba | Derecha | Abajo | Izquierda */
+<br><br>
+Arriba | Derecha | Abajo | Izquierda<br>
 margin: 2px 1em 0 auto;
-
-/* Valores globales */
-margin: inherit;
-margin: initial;
+<br><br>
+Valores globales<br>
+margin: inherit;<br>
+margin: initial;<br>
 margin: unset;
             </td>
         </tr>
 
         <tr>
             <td>text</td>
-            <td>div</td>
-            <td>div</td>
+            <td>Son parámetros disponibles para dar estilo al texto<br>
+            puedes definir varios aspectos</td>
+            <td>
+                Puedes acompañar al texto de una delgada línea decorativa que puede estar en tres posiciones distintas, como underline (el típico subrayado debajo de la línea), through (en el centro de la línea -tachado-) o overline (encima del texto).<br>
+                text-decoration:underline;<br>
+                <br>
+                efecto que provee de cuatro posibilidades: capitalize que convierte en mayúscula la primera letra de cada palabra del texto, como puedes ver en el ejemplo, donde el texto original no es así. uppercase para convertir todas las letras a mayúsculas y lowercase para lo contrario, es decir, convertir todas las letras a minúsculas. El valor por defecto es none que no aplica ningún cambio.<br>
+   text-transform:capitalize;<br>
+   <br>
+Alinea el texto según convenga. Con left a la izquierda (por defecto), right a la derecha, center centrado, y justify justificado                <br>
+   text-align:left;<br>
+                <br>
+Produce que la primera línea del párrafo se escriba adentrada (indentada)<br>
+   text-indent:30px;<br>
+                
+            </td>
         </tr>
 
         <tr>
@@ -273,8 +286,23 @@ p { font: bold italic large serif }</td>
 
         <tr>
             <td>lists</td>
-            <td>div</td>
-            <td>div</td>
+            <td>Es posible definir el tipo de las listas con CSS<br>
+            El parámetro list-style-type puede tener, entre otros, los siguientes valores:
+disc (por defecto)<br>
+none<br>
+circle<br>
+square<br>
+decimal<br>
+upper-roman<br>
+lower-roman<br>
+upper-alpha<br>
+lower-alpha<br>
+                
+            </td>
+            <td>Por ejemplo:<br>
+ul {list-style-type:square;}<br>
+ol {list-style-type:upper-roman;}<br>
+            </td>
         </tr>
 
         <tr>
