@@ -139,20 +139,61 @@
 
         <tr>
             <td>backgrounds</td>
-            <td>Especificar el color de fondo de una etiqueta</td>
-            <td>div</td>
+            <td>Especificar el color de fondo de una etiqueta
+            <br>
+            Se puede usar background para definir los valores de una o de todas las propiedades siguientes: background-attachment, color, image, position, repeat.
+            </td>
+            <td>/* Usando <background-color> */
+background: green;
+
+/* Usando <bg-image> y <repeat-style> */
+background: url("test.jpg") repeat-y;
+
+/* Usando <box> and <background-color> */
+background: border-box red;
+
+/* Una sola imagen, centrada y escalada */
+background: no-repeat center/80% url("../img/image.png");
+                </td>
         </tr>
 
         <tr>
             <td>borders</td>
-            <td>Especificar el estilo de bordes de una etiqueta</td>
-            <td>div</td>
+            <td>Especificar el estilo de bordes de una etiqueta
+            La propiedad border permite definir en una única regla todos los bordes de los elementos seleccionados. Se puede utilizar border para definir el o los valores siguientes: border-width, border-style, border-color
+            Su Sintaxis es
+border: [border-width || border-style || border-color | inherit] 
+            </td>
+            <td>
+            Ejemplo
+element {
+    border: 1px solid #000;
+}
+            </td>
         </tr>
 
         <tr>
             <td>margins</td>
-            <td>Especificar el estilo de  de una etiqueta</td>
-            <td>div</td>
+            <td>Especificar el estilo de  de una etiqueta
+            La propiedad CSS margin establece el margen para los cuatro lados. Es una abreviación para evitar tener que establecer cada lado por separado con las otras propiedades de margen: margin-top (en-US), margin-right, margin-bottom y margin-left (en-US).
+            </td>
+            <td>/* Aplica a todos los cuatro lados */
+margin: 1em;
+
+/* Vertical | Horizontal */
+margin: 5% auto;
+
+/* Arriba | Horizontal | Abajo */
+margin: 1em auto 2em;
+
+/* Arriba | Derecha | Abajo | Izquierda */
+margin: 2px 1em 0 auto;
+
+/* Valores globales */
+margin: inherit;
+margin: initial;
+margin: unset;
+            </td>
         </tr>
 
         <tr>
