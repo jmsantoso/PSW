@@ -143,13 +143,14 @@
                     <br>
                     Se puede usar background para definir los valores de una o de todas las propiedades siguientes: background-attachment, color, image, position, repeat.
                   </td>
-                  <td>/* Usando <background-color> */
-                    background: green;
+                  <td>Usando la etiqueta:<br>
                     
-                    Usando <bg-image> y <repeat-style>
+                    background: green;<br>
+                    
+                    Usando bg-image y repeat-style<br><br>
                       background: url("test.jpg") repeat-y;
-                      <br>
-                      Usando <box> and <background-color>
+                      <br><br>
+                      Usando box y background-color<br>
                         background: border-box red;<br>
                         background: no-repeat center/80% url("../img/image.png");
                       </td>
@@ -158,13 +159,13 @@
                     <tr>
                       <td>borders</td>
                       <td>Especificar el estilo de bordes de una etiqueta<br>
-                        La propiedad border permite definir en una única regla todos los bordes de los elementos seleccionados. Se puede utilizar border para definir el o los valores siguientes: border-width, border-style, border-color<br>
-                        Su Sintaxis es
+                        La propiedad border permite definir en una única regla todos los bordes de los elementos seleccionados. Se puede utilizar border para definir el o los valores siguientes: border-width, border-style, border-color<br><br>
+                        Su Sintaxis es:<br>
                         border: [border-width || border-style || border-color | inherit] 
                       </td>
                       <td>
                         Ejemplo: <br>
-                        element {
+                        element 
                           border: 1px solid #000;
                         }
                       </td>
@@ -173,7 +174,8 @@
                     <tr>
                       <td>margins</td>
                       <td>Especificar el estilo de  de una etiqueta<br>
-                        La propiedad CSS margin establece el margen para los cuatro lados. Es una abreviación para evitar tener que establecer cada lado por separado con las otras propiedades de margen: margin-top (en-US), margin-right, margin-bottom y margin-left (en-US).
+                        La propiedad CSS margin establece el margen para los cuatro lados. <br>
+                        Es una abreviación para evitar tener que establecer cada lado por separado con las otras propiedades de margen: margin-top (en-US), margin-right, margin-bottom y margin-left (en-US).
                       </td>
                       <td>
                         Aplica a todos los cuatro lados<br>
@@ -203,10 +205,11 @@
                           Puedes acompañar al texto de una delgada línea decorativa que puede estar en tres posiciones distintas, como underline (el típico subrayado debajo de la línea), through (en el centro de la línea -tachado-) o overline (encima del texto).<br>
                           text-decoration:underline;<br>
                           <br>
-                          efecto que provee de cuatro posibilidades: capitalize que convierte en mayúscula la primera letra de cada palabra del texto, como puedes ver en el ejemplo, donde el texto original no es así. uppercase para convertir todas las letras a mayúsculas y lowercase para lo contrario, es decir, convertir todas las letras a minúsculas. El valor por defecto es none que no aplica ningún cambio.<br>
+                          Este efecto que provee de cuatro posibilidades: capitalize que convierte en mayúscula la primera letra de cada palabra del texto, como puedes ver en el ejemplo, donde el texto original no es así. uppercase para convertir todas las letras a mayúsculas y lowercase para lo contrario, es decir, convertir todas las letras a minúsculas. <br>
+                          El valor por defecto es none que no aplica ningún cambio.<br>
                           text-transform:capitalize;<br>
                           <br>
-                          Alinea el texto según convenga. Con left a la izquierda (por defecto), right a la derecha, center centrado, y justify justificado                <br>
+                          Alinea el texto según convenga. Con left a la izquierda (por defecto), right a la derecha, center centrado, y justify justificado<br>
                           text-align:left;<br>
                           <br>
                           Produce que la primera línea del párrafo se escriba adentrada (indentada)<br>
@@ -217,70 +220,81 @@
                       
                       <tr>
                         <td>fonts</td>
-                        <td>La propiedad font permite establecer de una sola vez los valores para todas las propiedades: font-style, font-variant, font-weight, font-size, line-height y font-family en una hoja de estilo.
+                        <td>La propiedad font permite establecer de una sola vez los valores para todas las propiedades:<br>
+                          <br>
+                           font-style, font-variant, font-weight, font-size, line-height y font-family en una hoja de estilo.
                         </td>
                         <td>Sintaxis
-                          font: [ <font-style> || <font-variant> || <font-weight> ]? <font-size> [ / <line-height> ]? <font-family>
-                            Ejemplos
-                            
-                            /* Ajusta el tamaño de letra a 12pt y el alto de línea a 14pt. La familia tipográfica es sans-serif */
-                            p { font: 12pt/14pt sans-serif }
-                            /* Ajusta el tamaño de letra al 80% del elemento padre o al tamaño por defecto (si no hay elemento padre) y la familia tipográfica a sans-serif */
-                            p { font: 80% sans-serif }
-                            /* Ajusta el peso tipográfico a '''bold''' (negrita), el estilo de letra a ''italic'' (cursiva), el tamaño de letra a large (grande) y la familia a serif. */
-                            p { font: bold italic large serif }</td>
+                          font: [ font-style || font-variant || font-weight ]? font-size [ / line-height ]? font-family<br>
+                          <br>
+                            Ejemplos:<br>
+                            <br>
+                            Ajusta el tamaño de letra a 12pt y el alto de línea a 14pt. La familia tipográfica es sans-serif<br>  
+                            p { font: 12pt/14pt sans-serif }<br><br>
+                            Ajusta el tamaño de letra al 80% del elemento padre o al tamaño por defecto (si no hay elemento padre) y la familia tipográfica a sans-serif <br>
+                            p { font: 80% sans-serif }<br><br>
+                            Ajusta el peso tipográfico a '''bold''' (negrita), el estilo de letra a ''italic'' (cursiva), el tamaño de letra a large (grande) y la familia a serif. <br>
+                            p { font: bold italic large serif }</td><br>
                           </tr>
                           
                           <tr>
                             <td>height</td>
-                            <td>La propiedad CSS height especifica la altura de un elemento. Por defecto, la propiedad define la altura del área de contenido. Sin embargo, si box-sizing está configurado como border-box, determina la altura del área de borde.
+                            <td>La propiedad CSS height especifica la altura de un elemento. <br>
+                              Por defecto, la propiedad define la altura del área de contenido. <br>Sin embargo, si box-sizing está configurado como border-box, determina la altura del área de borde.
                             </td>
-                            <td>Ejemplos:
-                              div {
-                                width: 250px;
-                                margin-bottom: 5px;
-                                border: 2px solid blue;
-                              }
+                            <td>Ejemplos:<br>
+                              div {<br>
+                                width: 250px;<br>
+                                margin-bottom: 5px;<br>
+                                border: 2px solid blue;<br>
+                              }<br><br>
                               
-                              #taller {
-                                height: 50px;
-                              }
+                              #taller {<br>
+                                height: 50px;<br>
+                              }<br><br>
                               
-                              #shorter {
-                                height: 25px;
-                              }
+                              #shorter {<br>
+                                height: 25px;<br>
+                              }<br><br>
                               
-                              #parent {
-                                height: 100px;
-                              }
+                              #parent {<br>
+                                height: 100px;<br>
+                              }<br><br>
                               
-                              #child {
-                                height: 50%;
-                                width: 75%;
+                              #child {<br>
+                                height: 50%;<br>
+                                width: 75%;<br>
                               }</td>
                             </tr>
                             
                             <tr>
                               <td>width</td>
                               <td>Esta propiedad CSS  controla el ancho de la caja de los elementos</td>
-                              <td>El siguiente ejemplo establece el valor de la anchura del elemento <div> lateral:
-                                
+                              <td>Ejemplo:<br>
+                                Establece el valor de la anchura del elemento <div> 
+                                  lateral:<br>
+                                  
                                 #lateral { width: 200px; }
                                 
                                 <div id="lateral">
-                                  ...
+                                
                                 </div>
                               </td>
                             </tr>
                             
                             <tr>
                               <td>links</td>
-                              <td>Representa un elemento que aún no se ha visitado. Coincide con cada elemento no visitado <a>, <area>, o <link> que tiene un atributo href
-                                Para darle un estilo apropiado a los enlaces, coloque la regla :link antes de todas las demás reglas relacionadas con el enlace, tal como lo define el orden LVHA: :link — :visited — :hover — :active.
+                              <td>Representa un elemento que aún no se ha visitado. <br>
+                                Coincide con cada elemento no visitado (a, area, o link) que tiene un atributo href<br>
+                                Para darle un estilo apropiado a los enlaces, coloque la regla :link antes de todas las demás reglas relacionadas con el enlace, tal como lo define el orden <br>
+                                LVHA: <br>
+                                :link — :visited — :hover — :active.
                               </td>
-                              <td>Ejemplo, cambiar colores a dorado (enlace visitado) y verde (enlace no visitado): a:link {
-                                background-color: gold;
-                                color: green;
+                              <td>Ejemplo:<br>
+                                Cambiar colores a dorado (enlace visitado) y verde (enlace no visitado): a:link <br><br>
+                                {<br>
+                                background-color: gold;<br>
+                                color: green;<br>
                               }</td>
                             </tr>
                             
@@ -299,7 +313,7 @@
                                 lower-alpha<br>
                                 
                               </td>
-                              <td>Por ejemplo:<br>
+                              <td>Ejemplo:<br>
                                 ul {list-style-type:square;}<br>
                                 ol {list-style-type:upper-roman;}<br>
                               </td>
@@ -307,25 +321,25 @@
                             
                             <tr>
                               <td>tables</td>
-                              <td>Permite dar un formato a las tablas, cambiar el espaciado y la distribución
-                                Lo primero que hay que hacer es solucionar los aspectos de espaciado/distribución; que por defecto en la tabla son muy justos,
-                                la tipografía, 
-                                Gráficos y colores
+                              <td>Permite dar un formato a las tablas, cambiar el espaciado y la distribución<br>
+                                Lo primero que hay que hacer es solucionar los aspectos de espaciado/distribución; que por defecto en la tabla son muy justos,<br>
+                                la tipografía<br>
+                                Gráficos y colores<br>
                                 Darle un estilo al titulo que destaque
                               </td>
                               <td>
-                                /* spacing */
+                                Espaciado<br>
+                                <br>
+                                table {<br>
+                                  table-layout: fixed;<br>
+                                  width: 100%;<br>
+                                  border-collapse: collapse;<br>
+                                  border: 3px solid purple;<br>
+                                }<br><br>
                                 
-                                table {
-                                  table-layout: fixed;
-                                  width: 100%;
-                                  border-collapse: collapse;
-                                  border: 3px solid purple;
-                                }
-                                
-                                thead th:nth-child(1) {
-                                  width: 30%;
-                                }
+                                thead th:nth-child(1) {<br>
+                                  width: 30%;<br>
+                                }<br><br>
                                 
                                 thead th:nth-child(2) {
                                   width: 20%;
@@ -342,49 +356,48 @@
                                 th, td {
                                   padding: 20px;
                                 }
-                                /* typography */
+                                <br><br>
+                                html {<br>
+                                  font-family: 'helvetica neue', helvetica, arial, sans-serif;<br>
+                                }<br><br>
                                 
-                                html {
-                                  font-family: 'helvetica neue', helvetica, arial, sans-serif;
+                                thead th, tfoot th {<br>
+                                  font-family: 'Rock Salt', cursive;<br>
                                 }
+                                <br><br>
+                                th {<br>
+                                  letter-spacing: 2px;<br>
+                                }<br><br>
                                 
-                                thead th, tfoot th {
-                                  font-family: 'Rock Salt', cursive;
+                                td {<br>
+                                  letter-spacing: 1px;<br>
                                 }
-                                
-                                th {
-                                  letter-spacing: 2px;
+                                <br><br>
+                                tbody td {<br>
+                                  text-align: center;<br>
                                 }
-                                
-                                td {
-                                  letter-spacing: 1px;
-                                }
-                                
-                                tbody td {
-                                  text-align: center;
-                                }
-                                
-                                tfoot th {
-                                  text-align: right;
-                                }
-                                thead, tfoot {
-                                  background: url(leopardskin.jpg);
-                                  color: white;
+                                <br><br>
+                                tfoot th {<br>
+                                  text-align: right;<br>
+                                }<br><br>
+                                thead, tfoot {<br>
+                                  background: url(leopardskin.jpg);<br>
+                                  color: white;<br>
                                   text-shadow: 1px 1px 1px black;
                                 }
-                                
-                                thead th, tfoot th, tfoot td {
-                                  background: linear-gradient(to bottom, rgba(0,0,0,0.1), rgba(0,0,0,0.5));
-                                  border: 3px solid purple;
-                                }
-                                caption {
-                                  font-family: 'Rock Salt', cursive;
-                                  padding: 20px;
-                                  font-style: italic;
-                                  caption-side: bottom;
-                                  color: #666;
-                                  text-align: right;
-                                  letter-spacing: 1px;
+                                <br><br>
+                                thead th, tfoot th, tfoot td {<br>
+                                  background: linear-gradient(to bottom, rgba(0,0,0,0.1), rgba(0,0,0,0.5));<br>
+                                  border: 3px solid purple;<br>
+                                }<br><br>
+                                caption {<br>
+                                  font-family: 'Rock Salt', cursive;<br>
+                                  padding: 20px;<br>
+                                  font-style: italic;<br>
+                                  caption-side: bottom;<br>
+                                  color: #666;<br>
+                                  text-align: right;<br>
+                                  letter-spacing: 1px;<br>
                                 }
                                 
                               </td>
@@ -393,22 +406,22 @@
                             <tr>
                               <td>position</td>
                               <td>
-                                La propiedad position de CSS especifica cómo un elemento es posicionado en el documento.
+                                La propiedad position de CSS especifica cómo un elemento es posicionado en el documento.<br>
                                 Tambien las propiedades top, right, bottom, y left determinan la ubicación final de los elementos posicionados.
                               </td>
-                              <td>Damos los valores a una caja
-                                .box {
-                                  width: 100px;
-                                  height: 100px;
-                                  background: red;
-                                  color: white;
-                                }
+                              <td>Damos los valores a una caja<br><br>
+                                .box {<br>
+                                  width: 100px;<br>
+                                  height: 100px;<br>
+                                  background: red;<br>
+                                  color: white;<br>
+                                }<br><br>
                                 
-                                .outer {
-                                  width: 500px;
-                                  height: 300px;
-                                  overflow: scroll;
-                                  padding-left: 150px;
+                                .outer {<br>
+                                  width: 500px;<br>
+                                  height: 300px;<br>
+                                  overflow: scroll;<br>
+                                  padding-left: 150px;<br>
                                 }
                               }</td>
                             </tr>
@@ -419,28 +432,29 @@
                                 La propiedad CSS overflow-y define qué se debe mostrar cuando el contenido se desborda de los extremos superior e inferior de un elemento en bloque.
                               </td>
                               <td>
-                                overflow-y:hidden — Para esconder el texto fuera de la caja
-                                #div1 { overflow-y: hidden; margin-bottom: 12px;}
+                                overflow-y:hidden — Para esconder el texto fuera de la caja<br>
+                                #div1 { overflow-y: hidden; margin-bottom: 12px;}<br><br>
                                 
-                                overflow-y:scroll — Para agregar una barra scroll si se necesita
-                                #div2 { overflow-y: scroll; margin-bottom: 12px;}
+                                overflow-y:scroll — Para agregar una barra scroll si se necesita<br>
+                                #div2 { overflow-y: scroll; margin-bottom: 12px;}<br><br>
                                 
-                                overflow-y:visible — Para mostrar el texto fuera de la caja si se necesita
-                                #div3 { overflow-y: visible; margin-bottom: 120px;}
+                                overflow-y:visible — Para mostrar el texto fuera de la caja si se necesita<br>
+                                #div3 { overflow-y: visible; margin-bottom: 120px;}<br><br>
                                 
-                                overflow-y:auto — Este es particular, en la mayoría de los navegadores, equivale a scroll            
+                                overflow-y:auto — Este es particular, en la mayoría de los navegadores, equivale a scroll<br>            
                                 #div4 { overflow-y: auto; margin-bottom: 120px;}</td>
                               </tr>
                               
                               <tr>
                                 <td>float</td>
                                 <td>
-                                  La propiedad CSS float ubica un elemento al lado izquierdo o derecho de su contenedor, permitiendo a los elementos de texto y en línea aparecer a su costado. El elemento es removido del normal flujo de la página, aunque aún sigue siendo parte del flujo (a diferencia del posicionamiento absoluto).
+                                  La propiedad CSS float ubica un elemento al lado izquierdo o derecho de su contenedor, permitiendo a los elementos de texto y en línea aparecer a su costado. El elemento es removido del normal flujo de la página, aunque aún sigue siendo parte del flujo (a diferencia del posicionamiento absoluto).<br>
                                   Un elemento flotante es un elemento en el que el valor calculado de float no es igual a none.  
                                 </td>
                                 <td>
                                   Su sintaxis:<br>
-                                  <br>                                  float: left;
+                                  <br>                                  
+                                  float: left;<br>
                                   float: right;<br>
                                   float: none;<br>
                                   float: inline-start;<br>
